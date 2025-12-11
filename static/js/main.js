@@ -52,101 +52,150 @@ const productos=[
 // Bebidas
 {
     id:"5",
-    titulo:"Macbook Air 15 - Azul Cielo",
-    imagen:"https://i.pinimg.com/1200x/63/ff/ec/63ffecad564ef57f80a7ffc23108ef1d.jpg",
+    titulo:"Coctel de Naranja",
+    imagen:"https://i.pinimg.com/736x/0c/47/0a/0c470abad960976b83cf00a3102aa37f.jpg",
     categoria:{
-        nombre:"Computadores",
-    id:"computadores" // palabra calve debe ser igual al button id en index_car.html    
+        nombre:"Bebidas",
+    id:"bebidas" // palabra calve debe ser igual al button id en index_car.html    
     },
-    precio:9199010
+    precio:8000
 
 },
 
 {
     id:"6",
-    titulo:"MacBook Air 13 - Azul Medianoche",
-    imagen:"https://www.alkosto.com/medias/195950772258-001-750Wx750H?context=bWFzdGVyfGltYWdlc3wyMTgyNHxpbWFnZS93ZWJwfGFETXlMMmcxT1M4eE5UUXhNRGcxTnprMk56WTBOaTh4T1RVNU5UQTNOekl5TlRoZk1EQXhYemMxTUZkNE56VXdTQXxiYmRjMTNlYmZhNmYwYWRhZjA1NmUxOWMzYjZmMGYzNDdlZGUxMzhkNjg2ODI3MzIwNGFhOGZiZWVlOWY5YTQ1",
+    titulo:"Bebidas sin Alcohol",
+    imagen:"https://i.pinimg.com/736x/e8/ea/30/e8ea306cf14ed21d61c88fddfe385ded.jpg",
     categoria:{
-        nombre:"Computadores",
-    id:"computadores" // palabra calve debe ser igual al button id en index_car.html    
+        nombre:"Bebidas",
+    id:"bebidas" // palabra calve debe ser igual al button id en index_car.html    
     },
-    precio:6949010
+    precio:6000
 
 },
 
 {
     id:"7",
-    titulo:"Computador All In One LENOVO IdeaCentre AIO 3 - 23.8 - Blanco",
-    imagen:"https://www.alkosto.com/medias/198154749583-001-750Wx750H?context=bWFzdGVyfGltYWdlc3wxNTMxMHxpbWFnZS93ZWJwfGFEaGhMMmcwWmk4eE5UTXlPRFUwTnpBeE1qWXpPQzh4T1RneE5UUTNORGsxT0ROZk1EQXhYemMxTUZkNE56VXdTQXwzZjBiMzIzMjRmODJjNTViM2JjNTYzOTUyMDA5MmRjYjY0OTVhZTNmNmQwZGFkOTU5NjhmMTdiMzcxNTczMDVm",
+    titulo:"Coctel de Panelada",
+    imagen:"https://i.pinimg.com/736x/41/a0/2c/41a02c45340b89e218630f6fd0febc9d.jpg",
     categoria:{
-        nombre:"Computadores",
-    id:"computadores" // palabra calve debe ser igual al button id en index_car.html    
+        nombre:"Bebidas",
+    id:"bebidas" // palabra calve debe ser igual al button id en index_car.html    
     },
-    precio:3599000
+    precio:9000
 
 },
 
 {
     id:"8",
-    titulo:"Computador Portátil 2 en 1 HP Omnibook 14 - Rosado",
-    imagen:"https://www.alkosto.com/medias/199251256882-001-750Wx750H?context=bWFzdGVyfGltYWdlc3wyNDM0MHxpbWFnZS93ZWJwfGFESTBMMmhoTkM4eE5USXhNVGc0T1RZNE9EWXdOaTh4T1RreU5URXlOVFk0T0RKZk1EQXhYemMxTUZkNE56VXdTQXxkZWM2NjEwNTA4NGJkMmQwMjU3OTVjOTJmMzI2M2YyNzFiMDE1ZTk5YWZkNzRmMTgyMTIyYTQyYmE5M2RmZTEw",
+    titulo:"Bebidas en Leche",
+    imagen:"https://i.pinimg.com/736x/9d/fc/d8/9dfcd8d6ddae6b6e545489efd2d5359f.jpg",
     categoria:{
-        nombre:"Computadores",
-    id:"computadores" // palabra calve debe ser igual al button id en index_car.html    
+        nombre:"Bebidas",
+    id:"bebidas" // palabra calve debe ser igual al button id en index_car.html    
     },
-    precio:5499000
+    precio:12000
 
 },
-// ACCESORIOS
+// Ramen
 {
     id:"9",
-    titulo:"Combo KALLEY Inalámbrico Teclado + Mouse K-CIM Morado Mate",
-    imagen:"https://www.alkosto.com/medias/7705946475020-001-750Wx750H?context=bWFzdGVyfGltYWdlc3wxOTk4NHxpbWFnZS93ZWJwfGFHWXlMMmd4TWk4eE5URTRORE0wTkRjME16azJOaTgzTnpBMU9UUTJORGMxTURJd1h6QXdNVjgzTlRCWGVEYzFNRWd8MmUyMGVmNTNhMmY5MTI4YjU4OTJmNGE5Y2ZlM2M3ZDJiMTBkZmFjNjc1YjUyZWY2Nzk2MDA0MTlmMmNhNzJiOQ",
+    titulo:"Ramen con Camaron",
+    imagen:"https://i.pinimg.com/736x/93/3e/cd/933ecd8a4f8e127fce7d780c9a6d4632.jpg",
     categoria:{
-        nombre:"Accesorios",
-    id:"accesorios" // palabra calve debe ser igual al button id en index_car.html    
+        nombre:"Ramen",
+    id:"ramen" // palabra calve debe ser igual al button id en index_car.html    
     },
-    precio:99900
+    precio:40000
 
 },
 
 {
     id:"10",
-    titulo:"Audífonos de Diadema LOGITECH G Inalámbricos Gamer G435 Blanco",
-    imagen:"https://www.alkosto.com/medias/097855168252-001-750Wx750H?context=bWFzdGVyfGltYWdlc3w0MjQyNHxpbWFnZS93ZWJwfGFHRm1MMmc0TUM4eE5ETXhPREU0TVRZeE16VTVPQzh3T1RjNE5UVXhOamd5TlRKZk1EQXhYemMxTUZkNE56VXdTQXw3OTIxN2VlZWZiMmE5YTAwZmMxY2VjNDExZGVjMTRlYmE4ODZmM2I4NzNkYjJiYjYzMmE3ZjY5MTFiN2I0NjE3",
+    titulo:"Ramen con Cerdo",
+    imagen:"https://i.pinimg.com/736x/27/14/af/2714af0f8f2abfd2192b7b6a3b1d6ccb.jpg",
     categoria:{
-        nombre:"Accesorios",
-    id:"accesorios" // palabra calve debe ser igual al button id en index_car.html    
+        nombre:"Ramen",
+    id:"ramen" // palabra calve debe ser igual al button id en index_car.html    
     },
-    precio:359900
+    precio:35000
 
 },
 
 {
     id:"11",
-    titulo:"Kit x 2 Micrófono PRIMUS Inalámbrico USB-C Negro",
-    imagen:"https://www.alkosto.com/medias/798302225299-001-750Wx750H?context=bWFzdGVyfGltYWdlc3wxODQ5NHxpbWFnZS93ZWJwfGFHSTJMMmcwTWk4eE5URTNPVEF6T1RrMk5USXhOQzgzT1Rnek1ESXlNalV5T1RsZk1EQXhYemMxTUZkNE56VXdTQXxjMzAzZWM1ZDE5ZjgwZmUyNjIyMjRhYzgxMzI2M2I2NzhiNDQ0ZTBjZTZhZTUyMDcwNGM4ZjU5NDc4Y2E4Yjc5",
+    titulo:"Ramne Picante",
+    imagen:"https://i.pinimg.com/736x/3e/87/bc/3e87bc5bfb175ee9f8b3d0cd683ede61.jpg",
     categoria:{
-        nombre:"Accesorios",
-    id:"accesorios" // palabra calve debe ser igual al button id en index_car.html    
+        nombre:"Ramen",
+    id:"ramen" // palabra calve debe ser igual al button id en index_car.html    
     },
-    precio:149900
+    precio:30000
 
 },
 
 {
     id:"12",
-    titulo:"Micrófono TRUST Alámbrico Gaming USB GXT 234 Yunix Negro",
-    imagen:"https://www.alkosto.com/medias/8713439253726-001-750Wx750H?context=bWFzdGVyfGltYWdlc3wxMzI3MnxpbWFnZS93ZWJwfGFESTNMMmc0Tmk4eE5USTNOamc1TmpneE16QTROaTg0TnpFek5ETTVNalV6TnpJMlh6QXdNVjgzTlRCWGVEYzFNRWd8ZWNiNzIxZjVkMzlmMzBkNjhjMjY4YzA4MTFjZTlhYmY4MGQ2NDAyY2U0ZWQ4MWM4OWJiOTA3YWY1NjEyNDEyYw",
+    titulo:"Ramen con Champiñones",
+    imagen:"https://i.pinimg.com/736x/ae/ad/7d/aead7d3aeb8e27b8f352beaf7dc82adb.jpg",
     categoria:{
-        nombre:"Accesorios",
-    id:"accesorios" // palabra calve debe ser igual al button id en index_car.html    
+        nombre:"Ramen",
+    id:"ramen" // palabra calve debe ser igual al button id en index_car.html    
     },
     precio:178900
 
+}, // En el ultimo producto se le quita la coma
+
+{
+    id:"13",
+    titulo:"Mochis de Fresa x 4 Unidades",
+    imagen:"https://i.pinimg.com/1200x/05/07/d6/0507d69e37dad1638c33aa746512e97f.jpg",
+    categoria:{
+        nombre:"Postres",
+    id:"postres" // palabra calve debe ser igual al button id en index_car.html    
+    },
+    precio:20000
+
+},
+
+{
+    id:"14",
+    titulo:"Pancake Relleno",
+    imagen:"https://i.pinimg.com/736x/cb/7f/da/cb7fdabf5c238f7ca02899cad9b6a28f.jpg",
+    categoria:{
+        nombre:"Postres",
+    id:"postres" // palabra calve debe ser igual al button id en index_car.html    
+    },
+    precio:24000
+
+},
+
+{
+    id:"15",
+    titulo:"Taiyaki con Crema o Helado",
+    imagen:"https://i.pinimg.com/736x/9e/14/71/9e1471f41324fd6003608f394ed40771.jpg",
+    categoria:{
+        nombre:"Postres",
+    id:"postres" // palabra calve debe ser igual al button id en index_car.html    
+    },
+    precio:23000
+
+},
+
+{
+    id:"16",
+    titulo:"Sushi Dulce",
+    imagen:"https://i.pinimg.com/736x/7e/ac/ea/7eacea8d0e188ace98cfafd910c16c41.jpg",
+    categoria:{
+        nombre:"Postres",
+    id:"postres" // palabra calve debe ser igual al button id en index_car.html    
+    },
+    precio:28000
+
 } // En el ultimo producto se le quita la coma
+
 ];
-//SECCION DE CODIGO JS
+//SECCION DE CODIGO JS 
 //código Js
 const contenedorProductos = document.querySelector("#contenedor-productos");
 const botonesCategorias = document.querySelectorAll(".boton-categoria");
