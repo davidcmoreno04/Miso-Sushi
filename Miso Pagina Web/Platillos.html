@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MisoJapanese</title>
+    <link rel="shortcut icon" href="https://i.pinimg.com/736x/3f/53/99/3f5399e76b483aa4c4e284e3c74c4039.jpg" type="image/x-icon">
+    <!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MisoJapanese - Demo Bootstrap</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- AOS (Animate On Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <style>
+    /* Estilos personalizados */
+    :root{
+      --accent:#d9480f;
+      --muted:#ff1515;
+    }
+    body { font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
+    .hero {
+      background: url('https://source.unsplash.com/collection/190727/1600x600?japanese-food') center/cover no-repeat;
+      color: white;
+      min-height: 60vh;
+      display:flex;
+      align-items:center;
+    }
+    .hero-overlay {
+      background: rgba(0,0,0,0.45);
+      width:100%;
+      padding: 4rem 0;
+    }
+    .category-card img { height: 160px; object-fit: cover; }
+    .product-card img { height: 180px; object-fit: cover; }
+    .badge-sale { background: #dc3545; color: white; position: absolute; top: 10px; left: 10px; }
+    .price-old { text-decoration: line-through; color: var(--muted); font-size: 0.9rem; }
+    footer { background:#0f1724; color: black; padding: 2.5rem 0; }
+    .cart-count { background: var(--accent); color: white; border-radius: 50%; padding: 0.15rem 0.5rem; font-weight:600; font-size: 0.8rem; }
+    @media (max-width:576px){
+      .hero { min-height: 40vh; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">MisoJapanese</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#">Popular</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Novedades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Ideas para regalar</a></li>
+          <li class="nav-item ms-3">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-overlay container" data-aos="fade-up">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <h1 class="display-5 fw-bold">Descubra Auténticos Sabores Japoneses</h1>
+          <p class="lead">Bienvenido a JapaneseFlavors, su puerta de entrada a las mejores delicias culinarias japonesas. Snacks, bebidas e ingredientes seleccionados para su disfrute.</p>
+          <a href="#products" class="btn btn-lg btn-warning text-white me-2">Comprar Ahora</a>
+          <a href="#categories" class="btn btn-outline-light">Explorar Categorías</a>
+        </div>
+        <div class="col-lg-5 d-none d-lg-block text-end">
+          <img src="https://i.pinimg.com/1200x/6e/69/b3/6e69b3ab4b8d9c7264afd3825879f499.jpg" alt="snacks" class="img-fluid rounded shadow" />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container my-5">
+
+    <!-- CATEGORIES -->
+    <section id="categories" class="mb-5">
+      <h5 class="mb-4" data-aos="fade-right">Explora Nuestras Categorías Culinarias</h5>
+      <div class="row g-3">
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="50">
+          <div class="card category-card">
+            <img src="https://i.pinimg.com/1200x/82/41/fa/8241fadb929447eef45a52d6deebfb15.jpg" class="card-img-top" alt="Bebidas">
+            <div class="card-body">
+              <h6 class="card-title">Bebidas (4)</h6>
+              <p class="card-text text-muted">Sakes, te, cocteles y bebidas únicas.</p>
+              <a class="btn btn-sm btn-primary" href="#products">Compra Ahora</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="150">
+          <div class="card category-card">
+            <img src="https://i.pinimg.com/1200x/03/bc/c0/03bcc04a8a2602fd49717800cf247473.jpg" class="card-img-top" alt="Ingredientes">
+            <div class="card-body">
+              <h6 class="card-title">Entradas (4)</h6>
+              <p class="card-text text-muted">Domplings, onigiris y camarones.</p>
+              <a class="btn btn-sm btn-primary" href="#products">Comprar Ahora</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="250">
+          <div class="card category-card">
+            <img src="https://i.pinimg.com/1200x/76/45/4e/76454e784dd0ee6cd2a1346f4ad6a55a.jpg" class="card-img-top" alt="Snacks">
+            <div class="card-body">
+              <h6 class="card-title">Postres (4)</h6>
+              <p class="card-text text-muted">creeps, dangos, mochis y más.</p>
+              <a class="btn btn-sm btn-primary" href="#products">Comprar Ahora</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS GRID -->
+    <section id="products" class="mb-5">
+      <h5 class="mb-4" data-aos="fade-right">Productos Destacados</h5>
+
+      <div class="row g-4">
+        <!-- Product 1 -->
+        <div class="col-sm-6 col-md-4" data-aos="fade-up">
+          <div class="card product-card position-relative">
+            <span class="badge badge-sale">Venta</span>
+            <img src="https://i.pinimg.com/1200x/ee/93/60/ee9360f934ec1e8c855ac41310ea0100.jpg" class="card-img-top" alt="Salsa de Soja">
+            <div class="card-body">
+              <h6 class="card-title">Camarones En Tempura De La Casa</h6>
+              <p class="mb-1"><strong>$4.99</strong></p>
+              <button class="btn btn-sm btn-outline-secondary add-to-cart">Añadir al carrito</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="col-sm-6 col-md-4" data-aos="fade-up" data-aos-delay="80">
+          <div class="card product-card position-relative">
+            <img src="https://i.pinimg.com/1200x/72/ad/72/72ad726eaaf4867b877d2b10a9b74dee.jpg" class="card-img-top" alt="Copos de Bonito">
+            <div class="card-body">
+              <h6 class="card-title">Salmon</h6>
+              <p class="mb-1"><strong>$6.75</strong></p>
+              <button class="btn btn-sm btn-outline-secondary add-to-cart">Añadir al carrito</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 (Sale with old price) -->
+        <div class="col-sm-6 col-md-4" data-aos="fade-up" data-aos-delay="160">
+          <div class="card product-card position-relative">
+            <span class="badge badge-sale">Venta</span>
+            <img src="https://i.pinimg.com/1200x/4b/35/6b/4b356b1a84e184f98e94078686e96669.jpg" class="card-img-top" alt="Arroz Japonés">
+            <div class="card-body">
+              <h6 class="card-title">Sushi</h6>
+              <p class="mb-0"><span class="price-old">$8,90</span> <strong class="ms-2">$7.38</strong></p>
+              <div class="mt-2">
+                <button class="btn btn-sm btn-outline-secondary add-to-cart">Añadir al carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="col-sm-6 col-md-4" data-aos="fade-up">
+          <div class="card product-card position-relative">
+            <img src="https://i.pinimg.com/1200x/b9/8b/54/b98b54021ba88b02ff04666c21e845de.jpg" class="card-img-top" alt="Pasta de Miso">
+            <div class="card-body">
+              <h6 class="card-title">Ramen de Miso Orgánica</h6>
+              <p class="mb-1"><strong>$22.99</strong></p>
+              <button class="btn btn-sm btn-outline-secondary add-to-cart">Añadir al carrito</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="col-sm-6 col-md-4" data-aos="fade-up" data-aos-delay="80">
+          <div class="card product-card position-relative">
+            <img src="https://i.pinimg.com/1200x/67/db/9e/67db9e55d9cee51df8e62a165a9c99ee.jpg" class="card-img-top" alt="Vino de Ciruela">
+            <div class="card-body">
+              <h6 class="card-title">Platillo Japones De La Casa</h6>
+              <p class="mb-1"><strong>$20.50</strong></p>
+              <button class="btn btn-sm btn-outline-secondary add-to-cart">Añadir al carrito</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="col-sm-6 col-md-4" data-aos="fade-up" data-aos-delay="160">
+          <div class="card product-card position-relative">
+            <span class="badge badge-sale">Venta</span>
+            <img src="https://i.pinimg.com/1200x/43/17/7c/43177ccb325e93a07cbf5c41a3ee9d27.jpg" class="card-img-top" alt="Sake">
+            <div class="card-body">
+              <h6 class="card-title">Curri</h6>
+              <p class="mb-0"><span class="price-old">$20.99</span> <strong class="ms-2">$18.70</strong></p>
+              <div class="mt-2">
+                <button class="btn btn-sm btn-outline-secondary add-to-cart">Añadir al carrito</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROMO / SALES -->
+    <section class="my-5 p-4 rounded-3" style="background: linear-gradient(90deg,#faebd5,#fff);" data-aos="fade-up">
+      <div class="row align-items-center">
+        <div class="col-md-8">
+          <h4 class="mb-2">Saborea los Ahorros</h4>
+          <p class="mb-0 text-muted">Descubre descuentos exclusivos en nuestras mejores exquisiteces japonesas, incluyendo ofertas especiales de temporada y por tiempo limitado.</p>
+        </div>
+        <div class="col-md-4 text-md-end mt-3 mt-md-0">
+          <a href="#products" class="btn btn-lg btn-outline-warning">Comprar Ahora</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPLORE / LINKS -->
+    <section class="mb-5" data-aos="fade-right">
+      <h6>Explorar</h6>
+      <div class="d-flex gap-3">
+        <a href="#" class="text-decoration-none">Popular</a>
+        <a href="#" class="text-decoration-none">Novedades</a>
+        <a href="#" class="text-decoration-none">Ideas para regalos</a>
+      </div>
+    </section>
+
+    <!-- SUBSCRIBE -->
+    <section class="bg-light p-4 rounded-3" data-aos="fade-up">
+      <div class="row align-items-center">
+        <div class="col-md-8">
+          <h6>¡Haste miembro ahora, Suscribete!</h6>
+          <p class="text-muted mb-0">Recibe las últimas noticias y ofertas especiales.</p>
+        </div>
+        <div class="col-md-4">
+          <form id="subscribeForm" class="d-flex">
+            <input type="email" class="form-control form-control-sm me-2" placeholder="Correo electrónico" required>
+            <button class="btn btn-sm btn-primary" type="submit">Suscribirse</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <h5 class="text-white">MisoJapanese</h5>
+          <p class="small text-muted">© 2025 JapaneseFlavors. Todos los derechos reservados.</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h6 class="text-white">Políticas</h6>
+          <ul class="list-unstyled small text-muted">
+            <li><a href="#" class="text-muted text-decoration-none">Términos y condiciones</a></li>
+            <li><a href="#" class="text-muted text-decoration-none">Política de privacidad</a></li>
+            <li><a href="#" class="text-muted text-decoration-none">Política de envío</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h6 class="text-white">Síguenos</h6>
+          <a href="#" class="text-muted me-2">Facebook</a>
+          <a href="#" class="text-muted">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOOTSTRAP & DEPENDENCIAS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <script>
+    // Inicializar AOS
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+
+    // Formulario de suscripción (demo)
+    document.getElementById('subscribeForm').addEventListener('submit', (e)=>{
+      e.preventDefault();
+      alert('Gracias por suscribirte. (Demo)');
+      e.target.reset();
+    });
+  </script>
+  
+
+</body>
+</html>
